@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Liehuang Zhu, Md M. Karim, Kashif Sharif, Chang Xu, Fan Li, Xiaojiang Du, Mohsen Guizani | Md Monjurul Karim</title>
+    <link>https://karimmd.github.io/author/liehuang-zhu-md-m.-karim-kashif-sharif-chang-xu-fan-li-xiaojiang-du-mohsen-guizani/</link>
+      <atom:link href="https://karimmd.github.io/author/liehuang-zhu-md-m.-karim-kashif-sharif-chang-xu-fan-li-xiaojiang-du-mohsen-guizani/index.xml" rel="self" type="application/rss+xml" />
+    <description>Liehuang Zhu, Md M. Karim, Kashif Sharif, Chang Xu, Fan Li, Xiaojiang Du, Mohsen Guizani</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>https://karimmd.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Liehuang Zhu, Md M. Karim, Kashif Sharif, Chang Xu, Fan Li, Xiaojiang Du, Mohsen Guizani</title>
+      <link>https://karimmd.github.io/author/liehuang-zhu-md-m.-karim-kashif-sharif-chang-xu-fan-li-xiaojiang-du-mohsen-guizani/</link>
+    </image>
+    
+    <item>
+      <title>SDN Controllers: A Comprehensive Analysis and Performance Evaluation Study</title>
+      <link>https://karimmd.github.io/publication/zhu2020sdn/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/publication/zhu2020sdn/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

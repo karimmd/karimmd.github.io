@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zohaib Latif, Kashif Sharif, Fan Li, Md Monjurul Karim, Sujit Biswas, Madiha Shahzad, Saraju P. Mohanty | Md Monjurul Karim</title>
+    <link>https://karimmd.github.io/author/zohaib-latif-kashif-sharif-fan-li-md-monjurul-karim-sujit-biswas-madiha-shahzad-saraju-p.-mohanty/</link>
+      <atom:link href="https://karimmd.github.io/author/zohaib-latif-kashif-sharif-fan-li-md-monjurul-karim-sujit-biswas-madiha-shahzad-saraju-p.-mohanty/index.xml" rel="self" type="application/rss+xml" />
+    <description>Zohaib Latif, Kashif Sharif, Fan Li, Md Monjurul Karim, Sujit Biswas, Madiha Shahzad, Saraju P. Mohanty</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>https://karimmd.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Zohaib Latif, Kashif Sharif, Fan Li, Md Monjurul Karim, Sujit Biswas, Madiha Shahzad, Saraju P. Mohanty</title>
+      <link>https://karimmd.github.io/author/zohaib-latif-kashif-sharif-fan-li-md-monjurul-karim-sujit-biswas-madiha-shahzad-saraju-p.-mohanty/</link>
+    </image>
+    
+    <item>
+      <title>DOLPHIN: Dynamically Optimized and Load Balanced PatH for INter-domain SDN Communication</title>
+      <link>https://karimmd.github.io/publication/latif2020dolphin/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/publication/latif2020dolphin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

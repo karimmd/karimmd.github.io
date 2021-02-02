@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nazish Tahir, Md Monjurul Karim, Kashif Sharif, Fan Li, Nadeem Ahmed | Md Monjurul Karim</title>
+    <link>https://karimmd.github.io/author/nazish-tahir-md-monjurul-karim-kashif-sharif-fan-li-nadeem-ahmed/</link>
+      <atom:link href="https://karimmd.github.io/author/nazish-tahir-md-monjurul-karim-kashif-sharif-fan-li-nadeem-ahmed/index.xml" rel="self" type="application/rss+xml" />
+    <description>Nazish Tahir, Md Monjurul Karim, Kashif Sharif, Fan Li, Nadeem Ahmed</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Jun 2018 00:00:00 +0800</lastBuildDate>
+    <image>
+      <url>https://karimmd.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Nazish Tahir, Md Monjurul Karim, Kashif Sharif, Fan Li, Nadeem Ahmed</title>
+      <link>https://karimmd.github.io/author/nazish-tahir-md-monjurul-karim-kashif-sharif-fan-li-nadeem-ahmed/</link>
+    </image>
+    
+    <item>
+      <title>Quadrant-Based Weighted Centroid Algorithm for Localization in Underground Mines</title>
+      <link>https://karimmd.github.io/publication/tahir2018quadrant/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/publication/tahir2018quadrant/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
