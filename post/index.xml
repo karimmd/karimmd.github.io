@@ -5,12 +5,69 @@
     <link>https://karimmd.github.io/post/</link>
       <atom:link href="https://karimmd.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 11 May 2021 10:15:36 +0800</lastBuildDate>
     <image>
       <url>https://karimmd.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>https://karimmd.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>How to Install NS-3 on Ubuntu 20.04 LTS</title>
+      <link>https://karimmd.github.io/post/tutorial/ns3_installation/</link>
+      <pubDate>Tue, 11 May 2021 10:15:36 +0800</pubDate>
+      <guid>https://karimmd.github.io/post/tutorial/ns3_installation/</guid>
+      <description>&lt;p&gt;There are multiple ways to install NS-3 on Linux OS. You can Google it to find those. Personally I prefer to collect the necessary commands and then create a bash script to be used in future. Before sharing the bash script I am going to explain the necessary steps that you may consider trying.&lt;/p&gt;
+&lt;h2 id=&#34;installation-steps&#34;&gt;Installation Steps&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Make sure that you are on the Home Directory&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd ~&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update the Ubuntu Repo and Existing Applications&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt update&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt -y upgrade&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install Core Dependencies for Build and Compilation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt install build-essential libsqlite3-dev libboost-all-dev libssl-dev git python3-setuptools castxml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install Dependencies for NS-3 Python bindings&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt install gir1.2-goocanvas-2.0 gir1.2-gtk-3.0 libgirepository1.0-dev python3-dev python3-gi python3-gi-cairo python3-pip python3-pygraphviz python3-pygccxml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install Dependencies for NS-3&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt install g++ pkg-config sqlite3 qt5-default mercurial ipython3 openmpi-bin openmpi-common openmpi-doc libopenmpi-dev autoconf cvs bzr unrar gdb valgrind uncrustify doxygen graphviz imagemagick python3-sphinx dia tcpdump libxml2 libxml2-dev cmake libc6-dev libc6-dev-i386 libclang-6.0-dev llvm-6.0-dev automake&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Install Additional Python Packages&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;sudo su 
+cd
+pip3 install kiwi
+exit
+cd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Download and Install NS-3 and NetAnim&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# download from ns-3 server
+wget -c https://www.nsnam.org/releases/ns-allinone-3.33.tar.bz2
+# extract tar.bz2
+tar -xvjf ns-allinone-3.33.tar.bz2
+# go back to home folder
+cd
+
+# navigate to ns-3 directory (not the NS-3 all in one)
+cd ns-allinone-3.33/ns-3.33/
+# Configure the installation
+./waf configure --enable-examples 
+# Build ns-3 installation
+./waf
+# to check whether installation was a success
+./waf --run hello-simulator
+
+# navigate to netanim dir.
+cd ns-allinone-3.33/netanim-3.108/
+# configure the build
+make clean
+# compile the build
+qmake NetAnim.pro
+# build netanim installation
+make
+# to execute NetAnim 
+./NetAnim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I hope this will help you. I am not an expert, but this is a sharing of the experience I&amp;rsquo;ve gained over the past few years. Feel free to ask questions in the comments and/or fill in any points that I haven&amp;rsquo;t explained well or that are missing.&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

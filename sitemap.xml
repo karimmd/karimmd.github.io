@@ -3,22 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://karimmd.github.io/author/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/authors/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/categories/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/post/tutorial/ns3_installation/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/tag/linux/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/post/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/tag/research/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/tags/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/category/tutorial/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/talk/2021-04-08/</loc>
+    <lastmod>2021-04-08T13:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/author/md-monjurul-karim/</loc>
+    <lastmod>2021-04-08T13:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://karimmd.github.io/talk/</loc>
+    <lastmod>2021-04-08T13:30:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://karimmd.github.io/publication-type/2/</loc>
     <lastmod>2020-12-18T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://karimmd.github.io/authors/</loc>
-    <lastmod>2020-12-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://karimmd.github.io/publication/latif2020dolphin/</loc>
-    <lastmod>2020-12-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://karimmd.github.io/</loc>
     <lastmod>2020-12-18T00:00:00+08:00</lastmod>
   </url>
   
@@ -73,11 +128,6 @@
   </url>
   
   <url>
-    <loc>https://karimmd.github.io/talk/</loc>
-    <lastmod>2018-12-28T10:15:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://karimmd.github.io/publication-type/1/</loc>
     <lastmod>2018-06-20T00:00:00+08:00</lastmod>
   </url>
@@ -100,22 +150,6 @@
   <url>
     <loc>https://karimmd.github.io/talk/2016-12_class-2/</loc>
     <lastmod>2016-11-20T10:15:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://karimmd.github.io/author/</loc>
-  </url>
-  
-  <url>
-    <loc>https://karimmd.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://karimmd.github.io/post/</loc>
-  </url>
-  
-  <url>
-    <loc>https://karimmd.github.io/tags/</loc>
   </url>
   
 </urlset>
