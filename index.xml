@@ -7,7 +7,7 @@
     <description>Md Monjurul Karim</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 11 May 2021 10:15:36 +0800</lastBuildDate>
     <image>
-      <url>https://karimmd.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://karimmd.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Md Monjurul Karim</title>
       <link>https://karimmd.github.io/</link>
     </image>
@@ -80,7 +80,7 @@ make
     <item>
       <title>DOLPHIN: Dynamically Optimized and Load Balanced PatH for INter-domain SDN Communication</title>
       <link>https://karimmd.github.io/publication/latif2020dolphin/</link>
-      <pubDate>Fri, 18 Dec 2020 00:00:00 +0800</pubDate>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://karimmd.github.io/publication/latif2020dolphin/</guid>
       <description></description>
     </item>
@@ -88,7 +88,7 @@ make
     <item>
       <title>SDN Controllers: A Comprehensive Analysis and Performance Evaluation Study</title>
       <link>https://karimmd.github.io/publication/zhu2020sdn/</link>
-      <pubDate>Sat, 12 Dec 2020 00:00:00 +0800</pubDate>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://karimmd.github.io/publication/zhu2020sdn/</guid>
       <description></description>
     </item>
@@ -96,7 +96,7 @@ make
     <item>
       <title>A Survey of Network Virtualization Techniques for Internet of Things Using SDN and NFV</title>
       <link>https://karimmd.github.io/publication/alam2020survey/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 +0800</pubDate>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://karimmd.github.io/publication/alam2020survey/</guid>
       <description></description>
     </item>
@@ -104,7 +104,7 @@ make
     <item>
       <title>A Comprehensive Survey of Interface Protocols for Software Defined Networks</title>
       <link>https://karimmd.github.io/publication/latif2020comprehensive/</link>
-      <pubDate>Sun, 12 Apr 2020 00:00:00 +0800</pubDate>
+      <pubDate>Sun, 12 Apr 2020 00:00:00 +0000</pubDate>
       <guid>https://karimmd.github.io/publication/latif2020comprehensive/</guid>
       <description></description>
     </item>
@@ -120,7 +120,7 @@ make
     <item>
       <title>Quadrant-Based Weighted Centroid Algorithm for Localization in Underground Mines</title>
       <link>https://karimmd.github.io/publication/tahir2018quadrant/</link>
-      <pubDate>Wed, 20 Jun 2018 00:00:00 +0800</pubDate>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
       <guid>https://karimmd.github.io/publication/tahir2018quadrant/</guid>
       <description></description>
     </item>

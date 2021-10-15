@@ -1,155 +1,95 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://karimmd.github.io/author/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/authors/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/categories/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/post/tutorial/ns3_installation/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/tag/linux/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/post/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/tag/research/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/tags/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/category/tutorial/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/talk/2021-04-08/</loc>
     <lastmod>2021-04-08T13:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/author/md-monjurul-karim/</loc>
     <lastmod>2021-04-08T13:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/talk/</loc>
     <lastmod>2021-04-08T13:30:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/publication-type/2/</loc>
-    <lastmod>2020-12-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/publication/latif2020dolphin/</loc>
-    <lastmod>2020-12-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/publication_types/</loc>
-    <lastmod>2020-12-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/publication/</loc>
-    <lastmod>2020-12-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/author/zohaib-latif-kashif-sharif-fan-li-md-monjurul-karim-sujit-biswas-madiha-shahzad-saraju-p.-mohanty/</loc>
-    <lastmod>2020-12-18T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-12-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/author/liehuang-zhu-md-m.-karim-kashif-sharif-chang-xu-fan-li-xiaojiang-du-mohsen-guizani/</loc>
-    <lastmod>2020-12-12T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/publication/zhu2020sdn/</loc>
-    <lastmod>2020-12-12T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/publication/alam2020survey/</loc>
-    <lastmod>2020-04-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/author/iqbal-alam-kashif-sharif-fan-li-zohaib-latif-md-monjurul-karim-boubakr-nour-sujit-biswas-yu-wang/</loc>
-    <lastmod>2020-04-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/publication/latif2020comprehensive/</loc>
-    <lastmod>2020-04-12T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/author/zohaib-latif-kashif-sharif-fan-li-md-monjurul-karim-sujit-biswas-yu-wang/</loc>
-    <lastmod>2020-04-12T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2020-04-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/talk/2018-12_class/</loc>
     <lastmod>2018-12-28T10:15:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/publication-type/1/</loc>
-    <lastmod>2018-06-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/author/nazish-tahir-md-monjurul-karim-kashif-sharif-fan-li-nadeem-ahmed/</loc>
-    <lastmod>2018-06-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/publication/tahir2018quadrant/</loc>
-    <lastmod>2018-06-20T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2018-06-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/talk/2016-12_class/</loc>
     <lastmod>2016-12-20T19:15:00+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://karimmd.github.io/talk/2016-12_class-2/</loc>
     <lastmod>2016-11-20T10:15:00+08:00</lastmod>
   </url>
-  
 </urlset>
