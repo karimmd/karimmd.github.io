@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Md Monjurul Karim</title>
+    <link>https://karimmd.github.io/project/</link>
+      <atom:link href="https://karimmd.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://karimmd.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://karimmd.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>AI and Edge Computing Enabled Blockchain for IoV Application</title>
+      <link>https://karimmd.github.io/project/innovation-project/</link>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://karimmd.github.io/project/innovation-project/</guid>
+      <description>&lt;p&gt;In this project, we would like to develop a reputation-based system for Internet of Vehicle to identify secure and malicious vehicles using distributed learning, blockchain and edge computing techniques.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

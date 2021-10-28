@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks | Md Monjurul Karim</title>
+    <link>https://karimmd.github.io/event/</link>
+      <atom:link href="https://karimmd.github.io/event/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent &amp; Upcoming Talks</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 08 Apr 2021 13:30:00 +0800</lastBuildDate>
+    <image>
+      <url>https://karimmd.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://karimmd.github.io/event/</link>
+    </image>
+    
+    <item>
+      <title>Installation Manual for NS-3 on Ubuntu 20.04 and WSL-2</title>
+      <link>https://karimmd.github.io/talk/installation-manual-for-ns-3-on-ubuntu-20.04-and-wsl-2/</link>
+      <pubDate>Thu, 08 Apr 2021 13:30:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/talk/installation-manual-for-ns-3-on-ubuntu-20.04-and-wsl-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Evaluation of SDN Controller and Its Impact on Information-Centric Networking (ICN)</title>
+      <link>https://karimmd.github.io/talk/evaluation-of-sdn-controller-and-its-impact-on-information-centric-networking-icn/</link>
+      <pubDate>Fri, 28 Dec 2018 10:15:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/talk/evaluation-of-sdn-controller-and-its-impact-on-information-centric-networking-icn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Introduction to Network Function Virtualization</title>
+      <link>https://karimmd.github.io/talk/an-introduction-to-network-function-virtualization/</link>
+      <pubDate>Tue, 20 Dec 2016 19:15:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/talk/an-introduction-to-network-function-virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simulation of multiple TCP Variations using NS-3 </title>
+      <link>https://karimmd.github.io/talk/simulation-of-multiple-tcp-variations-using-ns-3/</link>
+      <pubDate>Sun, 20 Nov 2016 10:15:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/talk/simulation-of-multiple-tcp-variations-using-ns-3/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
