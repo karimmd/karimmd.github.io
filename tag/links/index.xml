@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Links | Md Monjurul Karim</title>
+    <link>https://karimmd.github.io/tag/links/</link>
+      <atom:link href="https://karimmd.github.io/tag/links/index.xml" rel="self" type="application/rss+xml" />
+    <description>Links</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 31 Oct 2021 04:40:00 +0800</lastBuildDate>
+    <image>
+      <url>https://karimmd.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Links</title>
+      <link>https://karimmd.github.io/tag/links/</link>
+    </image>
+    
+    <item>
+      <title>Bookmarks</title>
+      <link>https://karimmd.github.io/post/resources/</link>
+      <pubDate>Sun, 31 Oct 2021 04:40:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/post/resources/</guid>
+      <description>&lt;h3 id=&#34;personal-blog&#34;&gt;Personal Blog&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://im.perhapsbay.es/kb/machine-learning-courses&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning Courses by Sanyam Kapoor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://im.perhapsbay.es/kb/on-good-writing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;On Good Writing by Sanyam Kapoor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;reinforcement-learning&#34;&gt;Reinforcement Learning&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://wiki.pathmind.com/deep-reinforcement-learning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Beginner&amp;rsquo;s Guide to Deep Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://towardsdatascience.com/policy-gradients-in-a-nutshell-8b72f9743c5d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Policy Gradients in a Nutshell&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://deeplizard.com/learn/video/nyjbcRQ-uQ8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reinforcement Learning-Goal Oriented Intelligence&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
