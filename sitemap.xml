@@ -2,43 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://karimmd.github.io/post/resources/</loc>
-    <lastmod>2021-10-31T04:40:00+08:00</lastmod>
-  </url><url>
-    <loc>https://karimmd.github.io/categories/</loc>
-    <lastmod>2021-10-31T04:40:00+08:00</lastmod>
-  </url><url>
-    <loc>https://karimmd.github.io/tag/internet/</loc>
-    <lastmod>2021-10-31T04:40:00+08:00</lastmod>
-  </url><url>
-    <loc>https://karimmd.github.io/tag/links/</loc>
-    <lastmod>2021-10-31T04:40:00+08:00</lastmod>
-  </url><url>
-    <loc>https://karimmd.github.io/</loc>
-    <lastmod>2021-10-31T04:40:00+08:00</lastmod>
-  </url><url>
-    <loc>https://karimmd.github.io/category/online-resources/</loc>
-    <lastmod>2021-10-31T04:40:00+08:00</lastmod>
-  </url><url>
-    <loc>https://karimmd.github.io/post/</loc>
-    <lastmod>2021-10-31T04:40:00+08:00</lastmod>
-  </url><url>
-    <loc>https://karimmd.github.io/tags/</loc>
-    <lastmod>2021-10-31T04:40:00+08:00</lastmod>
-  </url><url>
     <loc>https://karimmd.github.io/project/innovation-project/</loc>
     <lastmod>2021-09-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://karimmd.github.io/tag/blockchain/</loc>
     <lastmod>2021-09-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://karimmd.github.io/</loc>
+    <lastmod>2021-09-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://karimmd.github.io/project/</loc>
     <lastmod>2021-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://karimmd.github.io/tags/</loc>
+    <lastmod>2021-09-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://karimmd.github.io/categories/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
   </url><url>
     <loc>https://karimmd.github.io/post/ns3_installation/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
   </url><url>
     <loc>https://karimmd.github.io/tag/linux/</loc>
+    <lastmod>2021-05-11T10:23:36+08:00</lastmod>
+  </url><url>
+    <loc>https://karimmd.github.io/post/</loc>
     <lastmod>2021-05-11T10:23:36+08:00</lastmod>
   </url><url>
     <loc>https://karimmd.github.io/tag/research/</loc>
