@@ -17,7 +17,10 @@
       <link>https://karimmd.github.io/post/ns3_installation/</link>
       <pubDate>Tue, 11 May 2021 10:15:36 +0800</pubDate>
       <guid>https://karimmd.github.io/post/ns3_installation/</guid>
-      <description>&lt;p&gt;There are multiple ways to install NS-3 on Linux OS. You can Google it to find those. Personally I prefer to collect the necessary commands and then create a bash script to be used in future. Before sharing the bash script I am going to explain the necessary steps that you may consider trying.&lt;/p&gt;
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;This method may not work on the recent versions of Ubuntu 20.04 LTS. (Host OS and WSL-2 in Win.10). You can try at your own risk.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There are multiple ways to install NS-3 on Linux OS. You can Google it to find those. Personally I prefer to collect the necessary commands and then create a bash script to be used in future. Before sharing the bash script I am going to explain the necessary steps that you may consider trying.&lt;/p&gt;
 &lt;h3 id=&#34;installation-steps&#34;&gt;Installation Steps&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Make sure that you are on the Home Directory&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;cd ~&lt;/code&gt;&lt;/p&gt;
