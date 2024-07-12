@@ -5,12 +5,44 @@
     <link>https://karimmd.github.io/</link>
       <atom:link href="https://karimmd.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Md Monjurul Karim</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 25 Apr 2024 13:30:00 +0800</lastBuildDate>
     <image>
       <url>https://karimmd.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Md Monjurul Karim</title>
       <link>https://karimmd.github.io/</link>
     </image>
+    
+    <item>
+      <title>Web3&#43;AI: A New Frontiers in the Decentralized Ecosystem</title>
+      <link>https://karimmd.github.io/talk/web3-ai-a-new-frontiers-in-the-decentralized-ecosystem/</link>
+      <pubDate>Thu, 25 Apr 2024 13:30:00 +0800</pubDate>
+      <guid>https://karimmd.github.io/talk/web3-ai-a-new-frontiers-in-the-decentralized-ecosystem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forwarding and caching in video streaming over ICSDN: A clean-slate publish-subscribe approach</title>
+      <link>https://karimmd.github.io/publication/ashraf2022forwarding/</link>
+      <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://karimmd.github.io/publication/ashraf2022forwarding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Traffic Flow Optimization for UAVs in Multi-Layer Information-Centric Software-Defined FANET</title>
+      <link>https://karimmd.github.io/publication/zhu2023traffic/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://karimmd.github.io/publication/zhu2023traffic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lagrange Coded Federated Learning (L-CoFL) Model for Internet of Vehicles</title>
+      <link>https://karimmd.github.io/publication/ni2022lagrange/</link>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://karimmd.github.io/publication/ni2022lagrange/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>User-Centric Blockchain for Industry 5.0 Applications</title>

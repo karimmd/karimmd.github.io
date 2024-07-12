@@ -5,12 +5,28 @@
     <link>https://karimmd.github.io/publication-type/2/</link>
       <atom:link href="https://karimmd.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 18 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 24 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://karimmd.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>https://karimmd.github.io/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>Forwarding and caching in video streaming over ICSDN: A clean-slate publish-subscribe approach</title>
+      <link>https://karimmd.github.io/publication/ashraf2022forwarding/</link>
+      <pubDate>Sat, 24 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://karimmd.github.io/publication/ashraf2022forwarding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Traffic Flow Optimization for UAVs in Multi-Layer Information-Centric Software-Defined FANET</title>
+      <link>https://karimmd.github.io/publication/zhu2023traffic/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://karimmd.github.io/publication/zhu2023traffic/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>DOLPHIN: Dynamically Optimized and Load Balanced PatH for INter-domain SDN Communication</title>
