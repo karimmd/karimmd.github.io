@@ -5,12 +5,20 @@
     <link>https://karimmd.github.io/publication-type/2/</link>
       <atom:link href="https://karimmd.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
     <description>2</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 24 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://karimmd.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>2</title>
       <link>https://karimmd.github.io/publication-type/2/</link>
     </image>
+    
+    <item>
+      <title>CIC-SIoT: Clean-Slate Information-Centric Software-Defined Content Discovery and Distribution for Internet-of-Things</title>
+      <link>https://karimmd.github.io/publication/karim2024cicsiot/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://karimmd.github.io/publication/karim2024cicsiot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Forwarding and caching in video streaming over ICSDN: A clean-slate publish-subscribe approach</title>
