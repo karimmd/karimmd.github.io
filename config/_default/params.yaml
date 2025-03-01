@@ -26,6 +26,9 @@ marketing:
     google: ''
     baidu: ''
 
+
+
+
 # Site header
 header:
   navbar:
@@ -35,7 +38,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      text: "Md Monjurul Karim"
 
 # Site footer
 footer:
@@ -58,3 +61,4 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
