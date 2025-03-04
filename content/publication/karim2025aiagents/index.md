@@ -15,7 +15,7 @@ abstract_short = ""
 selected = true
 
 # Links (optional).
-doi = "110.3390/fi17020057"
+doi = "10.3390/fi17020057"
 url_slides = ""
 url_pdf = ""
 math = false
