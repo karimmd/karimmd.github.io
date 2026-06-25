@@ -35,7 +35,7 @@ my-website/
 - Fixed GitHub Actions workflow: path changed from `./standalone-portfolio` → `.`
 
 ### Profile Update (25 Jun 2026)
-- Role: `Postdoctoral Research Fellow` → `Assistant Researcher`
+- Role: `Postdoctoral Research Fellow` → `Assistant Professor`
 - Experience: split postdoc end `May. 2026` + new role `Jun. 2026–present`
 - Footer: `May 2026` → `June 2026`
 
