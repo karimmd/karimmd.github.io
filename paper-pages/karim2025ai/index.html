@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents</title>
+  <link rel="icon" type="image/x-icon" href="static/images/siat.jpg">
+  
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <!-- Academicons (if needed) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <style>
+    /* Custom Styles for Image Gallery */
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: auto;
+      max-height: 1500px;
+      margin-top: 20px;
+      overflow: visible;
+      position: relative;
+    }
+
+    .image-container {
+      position: relative;
+      text-align: center;
+    }
+
+    .image-gallery img {
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .image-name {
+      font-size: 16px;
+      color: #333;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Navigation arrows positioned outside the image */
+    .arrow-left, .arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* Create a subtle gradient for a more dynamic look */
+  background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.arrow-left {
+  left: -45px; /* Adjust as needed */
+}
+
+.arrow-right {
+  right: -45px; /* Adjust as needed */
+}
+
+.arrow-left:hover, .arrow-right:hover {
+  /* Darker gradient on hover and a slight scaling effect */
+  background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,1));
+  transform: translateY(-50%) scale(1.1);
+}
+
+    /* Citation Section */
+    .cite-section {
+      margin-top: 50px;
+      text-align: left;
+    }
+    .cite-section h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .cite-section pre {
+      font-size: 16px;
+      background-color: #f4f4f400;
+      padding: 15px;
+      border-radius: 5px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+/* Reduce vertical spacing around this particular section */
+.cite-section {
+  margin-top: 0.05rem !important;  /* Decrease from Bulma's default */
+  margin-bottom: 0.05rem !important;
+}
+
+  .cite-section h4 {
+    font-weight: bold;
+  }
+
+/* Reduce the margin on headings within the cite-section */
+.cite-section h3 {
+  margin-top: 0.01rem;
+  margin-bottom: 0.01rem;
+}
+.cite-section h4 {
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+  }
+
+/* Adjust paragraph spacing as well */
+.cite-section p {
+  margin-bottom: 0.0000001rem; /* or whatever spacing you prefer */
+}
+
+    .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  gap: 10px;  /* space between icons */
+}
+
+.social-icons a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px; /* vertically centers the icon */
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  opacity: 0.9;
+}
+
+/* Brand colors for each icon */
+.social-email    { background-color: #D44638 !important; } /* Gmail red or similar */
+.social-twitter  { background-color: #1DA1F2 !important; } /* Twitter blue */
+.social-linkedin { background-color: #0077B5 !important; } /* LinkedIn blue */
+.social-facebook { background-color: #1877F2 !important; } /* Facebook blue */
+.social-reddit   { background-color: #FF4500 !important; } /* Reddit orange */
+.social-mendeley { background-color: #2B7BB9 !important; } /* Mendeley blue */
+
+.social-icons i {
+  font-size: 18px;
+}
+
+  </style>
+
+  <script>
+    // First Image Gallery
+    const images = [
+      { src: "static/images/graphic abs.png", name: "Graphical Abstract" },
+      { src: "static/images/Operational architecture of LLM agents [36].jpg", name: "Fig. 1 Operational architecture of LLM agents [36]" },
+      { src: "static/images/An overview of blockchain architecture.jpg", name: "Fig. 2 An overview of blockchain architecture" },
+      { src: "static/images/A collaborative framework between blockchain and AI agents.jpg", name: "Fig. 3 A collaborative framework between blockchain and AI agents" },
+      { src: "static/images/Blockchain-based governance framework for AI agents.jpg", name: "Fig. 4 Blockchain-based governance framework for AI agents" },
+      { src: "static/images/Interaction between AI agents and users in a blockchain-based DeFi environment.jpg", name: "Fig. 5 Interaction between AI agents and users in a blockchain-based DeFi environment" },
+      { src: "static/images/DAO leverages AI agents for governance and automation.jpg", name: "Fig. 6 DAO leverages AI agents for governance and automation" },
+      { src: "static/images/Blockchain and AI agent-enabled supply chain framework.jpg", name: "Fig. 7 Blockchain and AI agent-enabled supply chain framework" },
+      { src: "static/images/Hybrid quantum computing framework integrating AI agents.jpg", name: "Fig. 8 Blockchain-based Quantum Computing Framework integrating AI Agents" }
+    ];
+    let currentImageIndex = 0;
+
+    function showNextImage() {
+      document.getElementById('currentImage').style.display = 'none';
+      document.getElementById('imageName').style.display = 'none';
+
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      const image = document.getElementById('currentImage');
+      image.src = images[currentImageIndex].src;
+      image.style.display = 'block';
+
+      const imageName = document.getElementById('imageName');
+      imageName.textContent = images[currentImageIndex].name;
+      imageName.style.display = 'block';
+    }
+
+    function showPreviousImage() {
+      document.getElementById('currentImage').style.display = 'none';
+      document.getElementById('imageName').style.display = 'none';
+
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      const image = document.getElementById('currentImage');
+      image.src = images[currentImageIndex].src;
+      image.style.display = 'block';
+
+      const imageName = document.getElementById('imageName');
+      imageName.textContent = images[currentImageIndex].name;
+      imageName.style.display = 'block';
+    }
+
+    window.addEventListener("load", function() {
+      const image = document.getElementById('currentImage');
+      image.src = images[currentImageIndex].src;
+      image.style.display = 'block';
+
+      const imageName = document.getElementById('imageName');
+      imageName.textContent = images[currentImageIndex].name;
+      imageName.style.display = 'block';
+    });
+
+    // Second Image Gallery
+    const images2 = [
+      { src: "static/images/compare with other surveys.png", name: "Table 1 Comparison between our work and the existing surveys" },
+      { src: "static/images/ai agents for blockchain.png", name: "Table 2 Summary of the existing research in terms of AI agents for blockchain" },
+      { src: "static/images/blockchain for ai.png", name: "Table 3 Summary of the existing research in terms of blockchain for AI agents" },
+      { src: "static/images/use cases.png", name: "Table 4 Summary of application and use case scenarios" },
+      { src: "static/images/ai agent blockchain fusion.png", name: "Table 5 Comparative analysis of AI agent and blockchain fusion solutions" }
+    ];
+    let currentImageIndex2 = 0;
+
+    function showNextImage2() {
+      document.getElementById('secondCurrentImage').style.display = 'none';
+      document.getElementById('secondImageName').style.display = 'none';
+
+      currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+      const image = document.getElementById('secondCurrentImage');
+      image.src = images2[currentImageIndex2].src;
+      image.style.display = 'block';
+
+      const imageName = document.getElementById('secondImageName');
+      imageName.textContent = images2[currentImageIndex2].name;
+      imageName.style.display = 'block';
+    }
+
+    function showPreviousImage2() {
+      document.getElementById('secondCurrentImage').style.display = 'none';
+      document.getElementById('secondImageName').style.display = 'none';
+
+      currentImageIndex2 = (currentImageIndex2 - 1 + images2.length) % images2.length;
+      const image = document.getElementById('secondCurrentImage');
+      image.src = images2[currentImageIndex2].src;
+      image.style.display = 'block';
+
+      const imageName = document.getElementById('secondImageName');
+      imageName.textContent = images2[currentImageIndex2].name;
+      imageName.style.display = 'block';
+    }
+
+    window.addEventListener("load", function() {
+      const image2 = document.getElementById('secondCurrentImage');
+      image2.src = images2[currentImageIndex2].src;
+      image2.style.display = 'block';
+
+      const imageName2 = document.getElementById('secondImageName');
+      imageName2.textContent = images2[currentImageIndex2].name;
+      imageName2.style.display = 'block';
+    });
+  </script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents</h1><br>
+          <h2 class="subtitle"><a href="https://karimmd.github.io/" target="_blank">Md Monjurul Karim</a>, Dong Hoang Van, Sangeen Khan, <a href="https://people.ucas.edu.cn/~qiang" target="_blank">Qiang Qu</a>, and <a href="https://www.researchgate.net/profile/Yroslav-Kholodov" target="_blank">Yaroslav Kholodov</a></h2>
+          <h2 class="subtitle">Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, University of Science and Technology Beijing, Innopolis University</h2>
+          <p> AI agent; blockchain; decentralized AI; large language model; multi-agent collaboration; Web3</p>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://www.mdpi.com/1999-5903/17/2/57" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Full Text</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="static/pdf/karim2025ai.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-link"></i></span>
+                <span>Presentation</span>
+                </a>
+              </span>
+            </div>
+
+            <div class="social-icons">
+              <!-- Email -->
+              <a href="mailto:...?subject=..." title="Email" class="social-email">
+                <i class="fas fa-envelope-square" style="font-size: 15px;"></i>
+              </a>
+              <!-- X (Twitter) -->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            
+            <a href="https://x.com/intent/post?text=AI%20Agents%20Meet%20Blockchain%3A%20A%20Survey%20on%20Secure%20and%20Scalable%20Collaboration%20for%20Multi-Agents&hashtags=mdpifutureinternet&url=https%3A%2F%2Fwww.mdpi.com%2F3164582&via=FutureInternet6"
+             onclick="windowOpen(this.href,600,800); return false"
+             target="_blank" rel="noopener noreferrer" class="social-twitter">
+            <!-- Use the X icon from Font Awesome 6.4+ -->
+            <i class="fa-brands fa-twitter" style="font-size: 15px;"></i>
+            </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.mdpi.com%2F3164582" title="LinkedIn" target="_blank" rel="noopener noreferrer" class="social-linkedin">
+                <i class="fab fa-linkedin-in" style="font-size: 15px;"></i>
+              </a>
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/sharer.php?u=https://www.mdpi.com/3164582" title="Facebook" target="_blank" rel="noopener noreferrer" class="social-facebook">
+                <i class="fab fa-facebook-square" style="font-size: 15px;"></i>
+              </a>
+              <!-- Reddit -->
+              <a href="http://www.reddit.com/submit?url=https://www.mdpi.com/3164582" title="Reddit" target="_blank" rel="noopener noreferrer" class="social-reddit">
+                <i class="fab fa-reddit-square" style="font-size: 20px;"></i>
+              </a>
+              <!-- Mendeley -->
+              <a href="http://www.mendeley.com/import/?url=https://www.mdpi.com/3164582" title="Mendeley" target="_blank" rel="noopener noreferrer" class="social-mendeley">
+                <i class="fab fa-mendeley" style="font-size: 20px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>In recent years, the interplay between AI agents and blockchain has enabled secure and scalable collaboration among multi-agent systems, promoting unprecedented levels of autonomy and interoperability. AI agents play a vital role in facilitating complex decision making and improving operational efficiency in blockchain systems. This collaborative synergy is particularly evident in how multi-agent systems collectively tackle complex tasks to ensure seamless integration within these frameworks. While significant efforts have been made to integrate AI agents and blockchain, most studies overlook the broader potential of AI agents in addressing challenges such as interoperability, scalability, and privacy issues. In this paper, we bridge these gaps by illustrating the interplay between AI agents and blockchain. Specifically, we explore how AI agents enhance decentralized systems and examine blockchain’s role in enabling secure and scalable collaboration. Furthermore, we categorize practical applications across domains, such as Web3, decentralized finance (DeFi), asset management, and autonomous systems, providing practical insights and real-world use cases. Additionally, we identify key research challenges, including the complexities of multi-agent coordination, interoperability across diverse systems, and privacy maintenance in decentralized frameworks. Finally, we offer future directions in terms of governance, sovereignty, computation, and interpretability to promote a secure and responsible ecosystem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Existing Image Gallery Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="image-gallery">
+      <div class="image-container">
+        <img id="currentImage" alt="Gallery Image">
+        <div class="image-name" id="imageName">Image Name</div>
+      </div>
+      <!-- Arrows for the first gallery -->
+      <button class="arrow-left" onclick="showPreviousImage()">&#10094;</button>
+      <button class="arrow-right" onclick="showNextImage()">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- New Image Gallery Section (Second Gallery) -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="image-gallery">
+      <div class="image-container">
+        <img id="secondCurrentImage" alt="Second Gallery Image">
+        <div class="image-name" id="secondImageName">Image Name</div>
+      </div>
+      <!-- Arrows for the second gallery -->
+      <button class="arrow-left" onclick="showPreviousImage2()">&#10094;</button>
+      <button class="arrow-right" onclick="showNextImage2()">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- Brief Summary Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Brief Summary</h2>
+    <p style="text-align:justify;">This paper presents a comprehensive survey on the integration of AI agents and blockchain, addressing the challenges and opportunities in secure and scalable multi-agent collaboration. The novelty of this study lies in its exploration of the intersection between decentralized AI (DeAI) and blockchain, emphasizing how AI agents enhance blockchain-based ecosystems through decision-making, consensus optimization, and autonomous collaboration. Unlike previous works that focus on either blockchain security or AI trustworthiness in isolation, this survey offers an integrated perspective on their synergistic relationship.</p><br>
+    <p style="text-align:justify;"><b>Scalability and privacy</b> are identified as key challenges in decentralized environments, with AI agents improving the efficiency of blockchain consensus mechanisms, reducing transaction latency, and optimizing resource allocation. The study also discusses blockchain’s role in ensuring secure agent interactions through decentralized governance, immutable audit trails, and cryptographic safeguards.</p><br>
+    <p style="text-align:justify;">In terms of contributions, the paper systematically evaluates AI agents' impact on blockchain scalability, security, and operational efficiency. It introduces <b>zero-shot learning for AI-driven blockchain operations</b>, explores novel <b>intelligent consensus mechanisms like Proof-of-Thought (PoT) and Proof-of-Compute (PoC)</b>, and discusses practical use cases in <b>DeFi governance, DAO automation, and decentralized supply chain management</b>. Finally, future directions include decentralized quantum computing, privacy-preserving AI-agent coordination, and self-sovereign AI agent governance.</p>
+  </div>
+  
+
+</section>
+
+<section class="section">
+<section class="section hero is-centered cite-section">
+  <div class="container is-max-desktop>
+    <div class="columns is-normal">
+      <div class="column is-four-fifths has-text-left">
+        <h2 class="title is-3 has-text-left">Cite Our Paper</h2>
+        <div class="has-text-left">
+        <h4>MDPI and ACS Style</h4>
+        <p>
+          Karim, M.M.; Van, D.H.; Khan, S.; Qu, Q.; Kholodov, Y. AI Agents Meet Blockchain: 
+          A Survey on Secure and Scalable Collaboration for Multi-Agents. 
+          <i>Future Internet</i> <b>2025</b>, <i>17</i>, 57. 
+          <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a>
+        </p>
+        
+        <h4>AMA Style</h4>
+        <p>
+          Karim MM, Van DH, Khan S, Qu Q, Kholodov Y. AI Agents Meet Blockchain: A Survey on Secure and 
+          Scalable Collaboration for Multi-Agents. 
+          <i>Future Internet</i>. 2025;17(2):57. 
+          <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a>
+        </p>
+        
+        <h4>Chicago/Turabian Style</h4>
+        <p>
+          Karim, Md Monjurul, Dong Hoang Van, Sangeen Khan, Qiang Qu, and Yaroslav Kholodov. 2025. 
+          “AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents.” 
+          <i>Future Internet</i> 17, no. 2 (2025): 57. 
+          <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a>
+        </p>
+        
+        <h4>APA Style</h4>
+        <p>
+          Karim, M. M., Van, D. H., Khan, S., Qu, Q., &amp; Kholodov, Y. (2025). 
+          <i>AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents</i>. 
+          <i>Future Internet</i>, 17(2), 57. 
+          <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a>
+        </p>
+        
+        <h4>Bibtex</h4>
+        <p>
+          @article{karim2025ai,<br>
+          &emsp;title={AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents},<br>
+          &emsp;author={Karim, Md Monjurul and Van, Dong Hoang and Khan, Sangeen and Qu, Qiang and Kholodov, Yaroslav},<br>
+          &emsp;journal={Future Internet},<br>
+          &emsp;year={2025},<br>
+          &emsp;volume={17},<br>
+          &emsp;number={2}<br>
+          }
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<!-- Useful Links Section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Useful Links</h2>
+    <ol style="list-style-type: decimal;">
+      <li><a href="https://www.mdpi.com/1999-5903/17/2/57" target="_blank">Official link of the Publication</a></li>
+      <li><a href="https://coinmarketcap.com/currencies/ai16z/" target="_blank">ai16z (Solana)</a></li>
+      <li><a href="https://app.virtuals.io/virtuals/68" target="_blank">Luna</a></li>
+      <li><a href="https://fetch.ai/" target="_blank">Fetch.ai</a></li>
+      <li><a href="https://truthterminal.wiki/" target="_blank">Truth Terminal</a></li>
+      <li><a href="https://singularitynet.io/" target="_blank">SingularityNet</a></li>
+      <li><a href="https://minaprotocol.com/" target="_blank">Mina Protocol</a></li>
+      <li><a href="https://www.bitte.ai/" target="_blank">Bitte</a></li>
+      <li><a href="https://www.delysium.com/" target="_blank">Delysium</a></li>
+    </ol>
+  </div>
+</section-->
+<!-- Cite Our Work Section -->
+<!--section class="section cite-section">
+  <centre>
+  <h2>Cite Our Paper</h2>
+  <div class="container is-max-desktop">
+    <div class="content has-text-left">
+    <!--h2 class="title is-3">References</h2>
+    <!--div class="section cite-section">
+      <h4>MDPI and ACS Style</h4>
+      <p>Karim, M.M.; Van, D.H.; Khan, S.; Qu, Q.; Kholodov, Y. AI Agents Meet Blockchain: AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents. <i>Future Internet</i> <b>2025</b>, <i>17</i>, 57. <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a></p>
+      <h4>AMA Style</h4>
+      <p>Karim MM, Van DH, Khan S, Qu Q, Kholodov Y. AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents. <i>Future Internet</i>. 2025;17(2):57. <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a></p>
+      <h4>Chicago/Turabian Style</h4>
+      <p>Karim, Md Monjurul, Dong Hoang Van, Sangeen Khan, Qiang Qu, and Yaroslav Kholodov. 2025. “AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents.” <i>Future Internet</i> 17, no. 2 (2025): 57. <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a></p>
+      <h4>APA Style</h4>
+      <p>Karim, M. M., Van, D. H., Khan, S., Qu, Q., & Kholodov, Y. (2025). <i>AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents</i>. <i>Future Internet</i>, 17(2), 57. <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a></p>
+      <h4>Bibtex</h4>
+      <p>@article{karim2025ai,
+        title={AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents},<br>
+        author={Karim, Md Monjurul and Van, Dong Hoang and Khan, Sangeen and Qu, Qiang and Kholodov, Yaroslav},<br>
+        journal={Future Internet},<br>
+        year={2025},<br>
+        volume={17},<br>
+        number={2}
+        }</p>
+    </div>
+  </div>
+  </div>
+</centre>
+</section-->
+
+<!-- References Section -->
+<!--section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">References</h2>
+    <div class="content">
+      <h3>MDPI and ACS Style</h3>
+      <p>Karim, M.M.; Van, D.H.; Khan, S.; Qu, Q.; Kholodov, Y. AI Agents Meet Blockchain: AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents. <i>Future Internet</i> <b>2025</b>, <i>17</i>, 57. <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a></p>
+
+      <h3>AMA Style</h3>
+      <p>Karim MM, Van DH, Khan S, Qu Q, Kholodov Y. AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents. <i>Future Internet</i>. 2025;17(2):57. <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a></p>
+
+      <h3>Chicago/Turabian Style</h3>
+      <p>Karim, Md Monjurul, Dong Hoang Van, Sangeen Khan, Qiang Qu, and Yaroslav Kholodov. 2025. “AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents.” <i>Future Internet</i> 17, no. 2 (2025): 57. <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a></p>
+
+      <h3>APA Style</h3>
+      <p>Karim, M. M., Van, D. H., Khan, S., Qu, Q., & Kholodov, Y. (2025). <i>AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents</i>. <i>Future Internet</i>, 17(2), 57. <a href="https://doi.org/10.3390/fi17020057" target="_blank">https://doi.org/10.3390/fi17020057</a></p>
+    </div>
+  </div>
+</section-->
+
+<!-- End New Centered Image Section -->
+<section class="section">
+  <div class="container is-max-desktop" style="text-align: center;">
+    <div class="columns is-mobile">
+      <div class="column is-one-third">
+        <a href="https://english.siat.cas.cn/" target="_blank">
+        <img src="static/images/siat.jpg" alt="Image 1" style="max-width:150px; border-radius: 5px;">
+      </a>
+      </div>
+      <div class="column is-one-third">
+        <a href="https://en.ustb.edu.cn/" target="_blank">
+        <img src="static/images/ustb.png" alt="Image 2" style="max-width:150px; border-radius: 5px;">
+        </a>
+      </div>
+      <div class="column is-one-third">
+        <a href="https://innopolis.university/en/" target="_blank">
+        <img src="static/images/innopolis.png" alt="Image 3" style="max-width:150px; border-radius: 5px;">
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Centered Image Section -->
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>This page was built using the Academic Project Page Template which was adopted from the Nerfies project page. You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br>
+          This website is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
