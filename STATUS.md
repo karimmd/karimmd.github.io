@@ -1,5 +1,6 @@
-# My Website — STATUS
+# My Website - STATUS
 
+**Last reviewed:** 2026-06-26
 **Live:** https://karimmd.github.io/
 **Repo:** `git@github.com:karimmd/karimmd.github.io.git`
 **Source:** `sidekicks/my-website/`
@@ -8,15 +9,19 @@
 
 ## Structure
 
-```
+```text
 my-website/
-├── index.html       ← Single canonical portfolio page
+├── index.html                <- Canonical portfolio landing page
+├── publication.bib           <- Publication metadata source
+├── paper-pages/              <- Dedicated paper microsites linked from the main page
+│   ├── karim2025ai/
+│   └── karim2026trust/
 ├── README.md
 ├── LICENSE.md
 ├── STATUS.md
 ├── .nojekyll
 ├── .github/
-│   └── workflows/publish.yaml   ← GitHub Actions deploy (path: .)
+│   └── workflows/publish.yaml  <- GitHub Pages deploy from `main`
 └── assets/
     ├── cv.pdf
     ├── karim.png
@@ -25,52 +30,60 @@ my-website/
 
 ---
 
-## What's Been Done
+## What has been done
 
-### Initial Cleanup (25 Jun 2026)
-- Flattened `github-push/` contents into root
-- Deleted `standalone-portfolio/` (divergent copy)
-- Deleted `github-push/standalone-portfolio/` (pure duplicate)
-- Init git with SSH remote at `my-website/`
-- Fixed GitHub Actions workflow: path changed from `./standalone-portfolio` → `.`
+### Initial cleanup (25 Jun 2026)
+- Flattened the old `github-push/` contents into the repository root.
+- Removed duplicate `standalone-portfolio/` copies.
+- Fixed the GitHub Actions workflow so Pages deploys from the repo root.
 
-### Profile Update (25 Jun 2026)
-- Role: `Postdoctoral Research Fellow` → `Assistant Professor`
-- Experience: split postdoc end `May. 2026` + new role `Jun. 2026–present`
-- Footer: `May 2026` → `June 2026`
+### Profile update (25 Jun 2026)
+- Changed the role label on the main page to `Assistant Professor`.
+- Updated the experience timeline accordingly.
+- Updated the footer year to June 2026.
 
-### Publication Fixes (25 Jun 2026)
-- **#4** Dynamic Client Selector — added DOI + pages from IEEE
-- **#7** Evaluation to Integration — updated from early access to published `23(3):6362–6377`
-- **#8** HySLA — updated from early access to published `13(9):18930–18944`
-- **#11** DOLPHIN — added DOI from IEEE
-- **#12** SDN Controllers — added DOI from ACM
-- **#13** Network Virtualization — added DOI from ACM
+### Publication corrections (25 Jun 2026)
+- #4 now has the IEEE DOI and published page range.
+- #7 now shows the published TDSC metadata.
+- #8 now shows the published IOTJ metadata.
+- #11, #12, and #13 now include their publisher DOI links.
+
+### Paper pages and styling (26 Jun 2026)
+- Added `paper-pages/karim2025ai/` for **AI Agents Meet Blockchain: A Survey on Secure and Scalable Collaboration for Multi-Agents**.
+- Added `paper-pages/karim2026trust/` for **From Trust to Augmentation: A Comprehensive Survey on Synergistic Integration of Decentralized and Generative Intelligence**.
+- Linked those pages from selected publication entries #7 and #2 on the main page.
+- Changed the main-page paper-link accent color to `#9c1b34`.
+- Reworked the Trust page so it uses the provided tables and affiliation logos from `paper-pages/karim2026trust/`.
+- Kept the AI Agents page in the figure-based microsite style used for the reference layout.
+
+### Citation landing page — karim2026trust (26 Jun 2026)
+- Removed the PDF download button; only the "Full Text" (publisher DOI) button remains.
+- Deleted the old multi-format "Cite Our Paper" section (Elsevier, APA, MLA, Chicago styles).
+- Added new "Cite This Paper" section at the end (before logos) with IEEE, APA, BibTeX, and DOI only.
+- Added "Research Keywords" section after the Brief Summary.
+- Added Google Scholar citation meta tags to `<head>`.
+- Created `static/bib/karim2026trust.bib` for downloadable citation.
+- Action file at `action/01-website-citation-landing-page.md` documents the task (corrected per Karim's preferences).
+- Footer now shows all 5 affiliations: SIAT, UCAS, BIT, Northumbria, City (innopolis/USTB removed).
+
+### Karim2025ai page update (26 Jun 2026)
+- Inserted as entry #7 on the main page (shifted entries 7–13 down to 8–14).
+- Linked from main index with `[Page]` link to `paper-pages/karim2025ai/`.
 
 ---
 
-## Publication List (13 papers, all with DOIs)
+## Current publication state
 
-| # | Paper | DOI | Status |
-|---|---|---|---|
-| 1 | MTC-SBC (FGCS 2026) | 10.1016/j.future.2026.108499 | ✅ |
-| 2 | Trust to Augmentation (CSR 2026) | 10.1016/j.cosrev.2026.100936 | ✅ |
-| 3 | Securing DeFi (BCRA 2026) | 10.1016/j.bcra.2026.100455 | ✅ |
-| 4 | Dynamic Client Selector (PerCom 2026) | 10.1109/PERCOM67906.2026.11524502 | ✅ |
-| 5 | Just-in-Time (AI 2026) | 10.3390/ai7040117 | ✅ |
-| 6 | Probabilistic Optimization (WAIM 2026) | 10.1007/978-981-95-5716-5_35 | ✅ |
-| 7 | Evaluation to Integration (TDSC 2026) | 10.1109/TDSC.2026.3664110 | ✅ |
-| 8 | HySLA (IoT-J 2026) | 10.1109/JIOT.2026.3662189 | ✅ |
-| 9 | Bitcoin Reimagined (BCRA 2025) | 10.1016/j.bcra.2025.100379 | ✅ |
-| 10 | CIC-SIoT (IoT-J 2024) | 10.1109/JIOT.2024.3441814 | ✅ |
-| 11 | DOLPHIN (TNSM 2021) | 10.1109/TNSM.2020.3045725 | ✅ |
-| 12 | SDN Controllers (CSUR 2020) | 10.1145/3421764 | ✅ |
-| 13 | Network Virtualization (CSUR 2020) | 10.1145/3379444 | ✅ |
+- 14 selected papers are listed on the main page.
+- All 14 selected papers have DOI links.
+- 2 selected papers have dedicated page links right now: #2 and #7.
+- `publication.bib` is the source of truth for the paper metadata.
+- The live site currently matches the local `index.html`.
 
 ---
 
 ## Deployment
 
-- **Trigger:** Push to `main` branch
-- **Pipeline:** GitHub Actions → upload artifact → deploy-pages
-- **Domain:** karimmd.github.io
+- **Trigger:** push to `main`
+- **Pipeline:** GitHub Actions -> GitHub Pages
+- **Domain:** `karimmd.github.io`
