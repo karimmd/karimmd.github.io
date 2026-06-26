@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="From Trust to Augmentation: A Comprehensive Survey on Synergistic Integration of Decentralized and Generative Intelligence">
+  <meta property="og:title" content="From Trust to Augmentation: A Comprehensive Survey on Synergistic Integration of Decentralized and Generative Intelligence"/>
+  <meta property="og:description" content="A unified trust-to-augmentation framework organizing the convergence of blockchain, Web3, DeAI, and GenAI into four interdependent layers for decentralized intelligence."/>
+  <meta property="og:url" content="https://karimmd.github.io/paper-pages/karim2026trust/"/>
+  <meta property="og:image" content="https://karimmd.github.io/paper-pages/karim2026trust/static/images/interaction.png"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:title" content="From Trust to Augmentation: A Comprehensive Survey">
+  <meta name="twitter:description" content="A unified trust-to-augmentation framework for decentralized and generative intelligence convergence.">
+  <meta name="twitter:image" content="https://karimmd.github.io/paper-pages/karim2026trust/static/images/interaction.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="blockchain, decentralized AI, generative AI, large language models, Web3, trust, augmentation, survey">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>From Trust to Augmentation: A Comprehensive Survey on Synergistic Integration of Decentralized and Generative Intelligence</title>
+  <link rel="icon" type="image/x-icon" href="static/images/siat.jpg">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <style>
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: auto;
+      max-height: 1500px;
+      margin-top: 20px;
+      overflow: visible;
+      position: relative;
+    }
+    .image-container { position: relative; text-align: center; }
+    .image-gallery img {
+      max-width: 100%; height: auto; max-height: 100%;
+      border-radius: 5px; display: none;
+    }
+    .image-name { font-size: 16px; color: #333; margin-top: 10px; font-weight: bold; }
+    .arrow-left, .arrow-right {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
+      color: #fff; padding: 12px; cursor: pointer; border: none;
+      border-radius: 50%; font-size: 24px; z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .arrow-left { left: -45px; }
+    .arrow-right { right: -45px; }
+    .arrow-left:hover, .arrow-right:hover {
+      background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(0,0,0,1));
+      transform: translateY(-50%) scale(1.1);
+    }
+    .cite-section { margin-top: 0.05rem !important; margin-bottom: 0.05rem !important; }
+    .cite-section h4 { font-weight: bold; margin-bottom: 0.3rem; margin-top: 1rem; }
+    .cite-section p { margin-bottom: 0.0000001rem; }
+    .social-icons {
+      display: flex; justify-content: center; align-items: center;
+      margin: 15px auto; gap: 10px;
+    }
+    .social-icons a {
+      display: inline-block; text-decoration: none; color: #fff;
+      width: 40px; height: 40px; border-radius: 5px; text-align: center;
+      line-height: 40px; transition: background-color 0.3s ease;
+    }
+    .social-icons a:hover { opacity: 0.9; }
+    .social-email    { background-color: #D44638 !important; }
+    .social-twitter  { background-color: #1DA1F2 !important; }
+    .social-linkedin { background-color: #0077B5 !important; }
+    .social-facebook { background-color: #1877F2 !important; }
+    .social-reddit   { background-color: #FF4500 !important; }
+    .social-mendeley { background-color: #2B7BB9 !important; }
+    .social-icons i { font-size: 18px; }
+  </style>
+
+  <script>
+    const images = [
+      { src: "static/images/overview.png", name: "Fig. 1 Overview of foundational concepts" },
+      { src: "static/images/interaction.png", name: "Fig. 2 Trust-to-Augmentation framework" },
+      { src: "static/images/method.png", name: "Fig. 3 Literature search and selection process" },
+      { src: "static/images/depin_arch.png", name: "Fig. 4 DePIN layered architecture" },
+      { src: "static/images/large-model-v2.png", name: "Fig. 5 Integrated framework of large models" },
+      { src: "static/images/wordcloud.png", name: "Fig. 6a Word-cloud of high-frequency terms" },
+      { src: "static/images/distribution.png", name: "Fig. 6b Distribution of studies by publication year" },
+      { src: "static/images/web3_layered.png", name: "Fig. 7 Web3 layered middleware architecture" }
+    ];
+    let currentImageIndex = 0;
+
+    function showNextImage() {
+      document.getElementById('currentImage').style.display = 'none';
+      document.getElementById('imageName').style.display = 'none';
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      const image = document.getElementById('currentImage');
+      image.src = images[currentImageIndex].src;
+      image.style.display = 'block';
+      document.getElementById('imageName').textContent = images[currentImageIndex].name;
+      document.getElementById('imageName').style.display = 'block';
+    }
+    function showPreviousImage() {
+      document.getElementById('currentImage').style.display = 'none';
+      document.getElementById('imageName').style.display = 'none';
+      currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+      const image = document.getElementById('currentImage');
+      image.src = images[currentImageIndex].src;
+      image.style.display = 'block';
+      document.getElementById('imageName').textContent = images[currentImageIndex].name;
+      document.getElementById('imageName').style.display = 'block';
+    }
+    window.addEventListener("load", function() {
+      const image = document.getElementById('currentImage');
+      image.src = images[currentImageIndex].src;
+      image.style.display = 'block';
+      document.getElementById('imageName').textContent = images[currentImageIndex].name;
+      document.getElementById('imageName').style.display = 'block';
+    });
+
+    const images2 = [
+      { src: "static/images/collaborate.png", name: "Fig. 8 Collaborative learning mesh architecture" },
+      { src: "static/images/contract.png", name: "Fig. 9 Smart contract as a service framework" },
+      { src: "static/images/governance.png", name: "Fig. 10 Decentralized governance model" },
+      { src: "static/images/aigc-v2.png", name: "Fig. 11 AIGC lifecycle and integration" },
+      { src: "static/images/llm-fl-bc-meta.png", name: "Fig. 12 LLM-FL-Blockchain meta-framework" },
+      { src: "static/images/sustain.png", name: "Fig. 13 Sustainability and deployment framework" },
+      { src: "static/images/quantum-v2.png", name: "Fig. 14 Quantum computing convergence" }
+    ];
+    let currentImageIndex2 = 0;
+
+    function showNextImage2() {
+      document.getElementById('secondCurrentImage').style.display = 'none';
+      document.getElementById('secondImageName').style.display = 'none';
+      currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+      const image = document.getElementById('secondCurrentImage');
+      image.src = images2[currentImageIndex2].src;
+      image.style.display = 'block';
+      document.getElementById('secondImageName').textContent = images2[currentImageIndex2].name;
+      document.getElementById('secondImageName').style.display = 'block';
+    }
+    function showPreviousImage2() {
+      document.getElementById('secondCurrentImage').style.display = 'none';
+      document.getElementById('secondImageName').style.display = 'none';
+      currentImageIndex2 = (currentImageIndex2 - 1 + images2.length) % images2.length;
+      const image = document.getElementById('secondCurrentImage');
+      image.src = images2[currentImageIndex2].src;
+      image.style.display = 'block';
+      document.getElementById('secondImageName').textContent = images2[currentImageIndex2].name;
+      document.getElementById('secondImageName').style.display = 'block';
+    }
+    window.addEventListener("load", function() {
+      const image2 = document.getElementById('secondCurrentImage');
+      image2.src = images2[currentImageIndex2].src;
+      image2.style.display = 'block';
+      document.getElementById('secondImageName').textContent = images2[currentImageIndex2].name;
+      document.getElementById('secondImageName').style.display = 'block';
+    });
+  </script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">From Trust to Augmentation: A Comprehensive Survey on Synergistic Integration of Decentralized and Generative Intelligence</h1><br>
+          <h2 class="subtitle"><a href="https://karimmd.github.io/" target="_blank">Md Monjurul Karim</a>, Sangeen Khan, <a href="https://people.ucas.edu.cn/~qiang" target="_blank">Qiang Qu</a>, Muhammad Muzammal, Kashif Sharif, and Sujit Biswas</h2>
+          <h2 class="subtitle">Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, University of Chinese Academy of Sciences, Northumbria University, Beijing Institute of Technology, City St George's University of London</h2>
+          <p>Blockchain &middot; Decentralized AI &middot; Generative AI &middot; Large Language Models &middot; Web3</p>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://doi.org/10.1016/j.cosrev.2026.100936" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                <span>Full Text</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="static/pdfs/karim2026trust.pdf" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon"><i class="fas fa-link"></i></span>
+                <span>PDF</span>
+                </a>
+              </span>
+            </div>
+
+            <div class="social-icons">
+              <a href="mailto:karim@siat.ac.cn?subject=From%20Trust%20to%20Augmentation" title="Email" class="social-email">
+                <i class="fas fa-envelope-square" style="font-size: 15px;"></i>
+              </a>
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+              <a href="https://x.com/intent/post?text=From%20Trust%20to%20Augmentation%3A%20A%20Comprehensive%20Survey&url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.cosrev.2026.100936"
+               onclick="window.open(this.href,600,800); return false"
+               target="_blank" rel="noopener noreferrer" class="social-twitter">
+              <i class="fa-brands fa-twitter" style="font-size: 15px;"></i>
+              </a>
+              <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fdoi.org%2F10.1016%2Fj.cosrev.2026.100936" title="LinkedIn" target="_blank" rel="noopener noreferrer" class="social-linkedin">
+                <i class="fab fa-linkedin-in" style="font-size: 15px;"></i>
+              </a>
+              <a href="https://www.facebook.com/sharer.php?u=https://doi.org/10.1016/j.cosrev.2026.100936" title="Facebook" target="_blank" rel="noopener noreferrer" class="social-facebook">
+                <i class="fab fa-facebook-square" style="font-size: 15px;"></i>
+              </a>
+              <a href="http://www.reddit.com/submit?url=https://doi.org/10.1016/j.cosrev.2026.100936" title="Reddit" target="_blank" rel="noopener noreferrer" class="social-reddit">
+                <i class="fab fa-reddit-square" style="font-size: 20px;"></i>
+              </a>
+              <a href="http://www.mendeley.com/import/?url=https://doi.org/10.1016/j.cosrev.2026.100936" title="Mendeley" target="_blank" rel="noopener noreferrer" class="social-mendeley">
+                <i class="fab fa-mendeley" style="font-size: 20px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>The integration of artificial intelligence (AI) and decentralization is reshaping application and system design across industry, government, and academia. Existing surveys typically examine blockchain, Web3, or generative models independently, which obscures the cross-layer dependencies that govern verifiability, privacy, coordination, and governance in decentralized systems. This survey bridges that gap by introducing a unified trust-to-augmentation framework that organizes the convergence into four interdependent layers: trust-based execution, privacy-preserving interoperable middleware, collaborative learning mesh, and generative augmentation. Unlike prior work that addresses these domains in isolation or in limited binary pairings, the survey explains how advances in one layer alter the requirements and surfaces of the others and identifies research gaps that arise from the integration of decentralized and generative AI. We map representative systems to the four layers and consolidate a taxonomy of enabling techniques, evaluation metrics, and layer-specific comparison tables to support consistent positioning of novel contributions. The synthesis clarifies how the convergence mitigates key limitations of centralized AI, including opacity and single points of failure. It enables automated governance, intelligent consensus, and adaptive user interfaces that preserve fault tolerance and data sovereignty. The analysis also highlights deployment challenges, including scalability bottlenecks, privacy protection under transparent ledgers, cross-chain interoperability, model interpretability, and incentive alignment. The survey identifies barriers to widespread adoption and provides strategic guidance for researchers, practitioners, and policymakers through analysis of real-world applications and deployment methodologies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Gallery 1 -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="image-gallery">
+      <div class="image-container">
+        <img id="currentImage" alt="Gallery Image">
+        <div class="image-name" id="imageName">Image Name</div>
+      </div>
+      <button class="arrow-left" onclick="showPreviousImage()">&#10094;</button>
+      <button class="arrow-right" onclick="showNextImage()">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- Image Gallery 2 -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="image-gallery">
+      <div class="image-container">
+        <img id="secondCurrentImage" alt="Second Gallery Image">
+        <div class="image-name" id="secondImageName">Image Name</div>
+      </div>
+      <button class="arrow-left" onclick="showPreviousImage2()">&#10094;</button>
+      <button class="arrow-right" onclick="showNextImage2()">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- Brief Summary Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Brief Summary</h2>
+    <p style="text-align:justify;">This paper presents a comprehensive survey on the convergence of decentralized and generative intelligence, introducing a unified <b>trust-to-augmentation framework</b> that organizes blockchain, Web3, decentralized AI (DeAI), and generative AI (GenAI) into four interdependent layers: trust-based execution, privacy-preserving interoperable middleware, collaborative learning mesh, and generative augmentation. The novelty of this study lies in its cross-layer perspective — unlike prior surveys that treat these domains in isolation or in limited binary pairings, it explains how advances in one layer alter the requirements and surfaces of the others, thereby revealing research gaps that arise specifically from integration rather than from any single technology.</p><br>
+    <p style="text-align:justify;">The survey systematically maps representative systems to each framework layer and consolidates a taxonomy of enabling techniques, evaluation metrics, and layer-specific comparison tables. It identifies novel architectural patterns including <b>intelligent consensus mechanisms</b> (Proof-of-Intelligence, Proof-of-AIGC), <b>privacy-preserving middleware protocols</b> (ZKPs, SMPC, cross-chain communication), <b>collaborative learning infrastructures</b> (federated learning meshes, Byzantine fault-tolerant aggregation), and <b>generative augmentation capabilities</b> that enable automated governance and adaptive user interfaces.</p><br>
+    <p style="text-align:justify;">In terms of contributions, the paper follows PRISMA-inspired methodology screening 532 candidate publications down to 223 selected studies, offering a reproducible and transparent corpus. It provides a strategic research roadmap addressing scalability bottlenecks, semantic consistency across heterogeneous representations, economic incentive alignment, and governance coordination. The synthesis demonstrates how convergence mitigates key limitations of centralized AI — including opacity and single points of failure — while enabling practical deployments across finance, healthcare, and governance domains. Finally, the survey identifies barriers to widespread adoption and provides actionable guidance for researchers, practitioners, and policymakers.</p>
+  </div>
+</section>
+
+<!-- Cite Our Paper -->
+<section class="section hero is-normal cite-section">
+  <div class="container is-max-desktop">
+    <div class="columns is-normal">
+      <div class="column is-four-fifths has-text-left">
+        <h2 class="title is-3 has-text-left">Cite Our Paper</h2>
+        <div class="has-text-left">
+        <h4>Elsevier (Harvard) Style</h4>
+        <p>
+          Karim, M.M., Khan, S., Qu, Q., Muzammal, M., Sharif, K., Biswas, S. From Trust to Augmentation: 
+          A Comprehensive Survey on Synergistic Integration of Decentralized and Generative Intelligence. 
+          <i>Computer Science Review</i> <b>2026</b>, <i>61</i>, 100936. 
+          <a href="https://doi.org/10.1016/j.cosrev.2026.100936" target="_blank">https://doi.org/10.1016/j.cosrev.2026.100936</a>
+        </p>
+
+        <h4>APA Style</h4>
+        <p>
+          Karim, M. M., Khan, S., Qu, Q., Muzammal, M., Sharif, K., &amp; Biswas, S. (2026). 
+          From Trust to Augmentation: A Comprehensive Survey on Synergistic Integration of Decentralized 
+          and Generative Intelligence. <i>Computer Science Review</i>, <i>61</i>, 100936. 
+          <a href="https://doi.org/10.1016/j.cosrev.2026.100936" target="_blank">https://doi.org/10.1016/j.cosrev.2026.100936</a>
+        </p>
+
+        <h4>MLA Style</h4>
+        <p>
+          Karim, Md Monjurul, et al. "From Trust to Augmentation: A Comprehensive Survey on Synergistic 
+          Integration of Decentralized and Generative Intelligence." 
+          <i>Computer Science Review</i>, vol. 61, 2026, p. 100936. 
+          <a href="https://doi.org/10.1016/j.cosrev.2026.100936" target="_blank">https://doi.org/10.1016/j.cosrev.2026.100936</a>
+        </p>
+
+        <h4>Chicago Style</h4>
+        <p>
+          Karim, Md Monjurul, Sangeen Khan, Qiang Qu, Muhammad Muzammal, Kashif Sharif, and Sujit Biswas. 
+          2026. "From Trust to Augmentation: A Comprehensive Survey on Synergistic Integration of 
+          Decentralized and Generative Intelligence." <i>Computer Science Review</i> 61: 100936. 
+          <a href="https://doi.org/10.1016/j.cosrev.2026.100936" target="_blank">https://doi.org/10.1016/j.cosrev.2026.100936</a>
+        </p>
+
+        <h4>BibTeX</h4>
+        <p>
+          @article{karim2026trust,<br>
+          &emsp;title={From Trust to Augmentation: A Comprehensive Survey on Synergistic Integration of Decentralized and Generative Intelligence},<br>
+          &emsp;author={Karim, Md Monjurul and Khan, Sangeen and Qu, Qiang and Muzammal, Muhammad and Sharif, Kashif and Biswas, Sujit},<br>
+          &emsp;journal={Computer Science Review},<br>
+          &emsp;year={2026},<br>
+          &emsp;volume={61},<br>
+          &emsp;pages={100936},<br>
+          &emsp;doi={10.1016/j.cosrev.2026.100936}<br>
+          }
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer logos -->
+<section class="section">
+  <div class="container is-max-desktop" style="text-align: center;">
+    <div class="columns is-mobile">
+      <div class="column is-one-third">
+        <a href="https://www.siat.ac.cn/" target="_blank">
+        <img src="static/images/siat.jpg" alt="SIAT" style="max-width:150px; border-radius: 5px;">
+      </a>
+      </div>
+      <div class="column is-one-third">
+        <a href="https://en.ustb.edu.cn/" target="_blank">
+        <img src="static/images/ustb.png" alt="USTB" style="max-width:150px; border-radius: 5px;">
+        </a>
+      </div>
+      <div class="column is-one-third">
+        <a href="https://innopolis.university/en/" target="_blank">
+        <img src="static/images/innopolis.png" alt="Innopolis" style="max-width:150px; border-radius: 5px;">
+      </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p class="has-text-centered">©2026 Md Monjurul Karim</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
