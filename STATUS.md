@@ -70,6 +70,10 @@ my-website/
 - Inserted as entry #7 on the main page (shifted entries 7–13 down to 8–14).
 - Linked from main index with `[Page]` link to `paper-pages/karim2025ai/`.
 
+### Selected publication correction (26 Jun 2026)
+- Corrected entry #6 author order for **Probabilistic Optimization of Top-k Aggregation in Distributed Environments** so Karim is shown as second author.
+- Replaced former entry #12 (**DOLPHIN**) with **Traffic Flow Optimization for UAVs in Multi-Layer Information-Centric Software-Defined FANET**, following `publication.bib`, where Karim is also second author.
+
 ---
 
 ## Current publication state
